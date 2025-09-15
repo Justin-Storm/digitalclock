@@ -3,6 +3,7 @@
 
 
 body {
+    height: 100dvh;
     height: 100vh;
     width: 100%;
     background: url('mountains.jpg') center/cover no-repeat;
