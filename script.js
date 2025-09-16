@@ -10,7 +10,7 @@ function updateTime() {
     hour = hour % 12;
     hour = hour ? hour : 12;
 
-    timeString.innerHTML = `${hour}:${minute < 10 ? '0' + minute : minute}:${second < 10 ? '0' + second : second} ${ampm}`;
+    timeString.innerHTML = `${hour < 10 ? '0' + hour : hour}:${minute < 10 ? '0' + minute : minute}:${second < 10 ? '0' + second : second} ${ampm}`;
 }
 
 setInterval(updateTime, 1000);
